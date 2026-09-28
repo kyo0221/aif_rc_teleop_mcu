@@ -1,0 +1,20 @@
+# ビルド成果物
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d
+*.su
+*.cyclo
+*.list
+
+# CubeIDE / Eclipse の個人設定・キャッシュ
+.metadata/
+.settings/language.settings.xml
+*.bak
+
+# CubeMX が自動再生成するファイル
+.mxproject
