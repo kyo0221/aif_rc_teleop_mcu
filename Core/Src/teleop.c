@@ -27,7 +27,7 @@ void teleop_on_channels(teleop_t *t, const uint16_t ch[16], uint32_t now_ms) {
     bool settled = now_ms - t->link_up_ms >= SETTLE_MS;
 
     t->sw_auto = hysteresis(t->sw_auto, ch[5]);
-    bool level = hysteresis(t->restart_level, ch[6]);
+    bool level = hysteresis(t->restart_level, ch[8]);
     if (settled && !t->restart_level && level) t->restart_count++;
     t->restart_level = level;
 

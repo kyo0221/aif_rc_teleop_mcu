@@ -9,7 +9,7 @@ static void frame(teleop_t *t, int thr, int steer, bool sa_auto, bool restart, u
     ch[2] = (uint16_t)thr;
     ch[0] = (uint16_t)steer;
     ch[5] = sa_auto ? 1811 : 172;
-    ch[6] = restart ? 1811 : 172;
+    ch[8] = restart ? 1811 : 172;
     teleop_on_channels(t, ch, now);
 }
 
